@@ -44,5 +44,10 @@ contract VariableTrial{
 }
 ```
 
+## RemixIDE
+[Overview of using the RemixIDE on Day 1](https://www.youtube.com/watch?v=B0BDi7J5DTI)
+
 ## Notes
-The structure is usually the licensing, the pragma to let you know which version of Solidity you are using and the contract is similar to a class. 
+The structure is usually the licensing, the pragma to let you know which version of Solidity you are using and the contract is similar to a class.
+
+[Back to Index](https://github.com/JeremySkrdlant/SolidityReflection)
