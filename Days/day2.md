@@ -55,7 +55,7 @@ func addCookieTap(mode:String){
 
 This solution is pretty straightforward and simple.  Pass in a string, check it's value, update based on if it is Chocolate Milk or not.
 
-The Solidity solution is just one way to achieve the result. The ingeniously use compare hash values from the binary version of the string.  To explain, I will go through the phases of error after errror to finally get to this solution and what I learned along the way.
+The Solidity solution above is just one way to achieve the result. It compares hash values from the binary version of the string.  To explain, I will go through the phases I took to go through errors, debug, and try again.
 
 ### Phase 1
 I typed in this code thinking there might be some spelling errors or a semicolon missing but it should work.  
@@ -156,7 +156,7 @@ TypeError: Operator == not compatible with types bytes memory and bytes memory
 Notice the the bytes memory and bytes memory are the same but not comparable.  
 
 ### keccak256
-This is solidities hashing function.  It can take bytes of data and create a hash from it.  Unfortunately it can not take a string so you need to use the abi.encode to convert it first.
+This is a hashing function you can use in Solidity.  It can take bytes of data and create a hash from it.  Unfortunately it can not take a string so you need to use the abi.encode to convert it first.
 
 [a few options to try](https://www.tutorialspoint.com/solidity/solidity_cryptographic_functions.htm)
 
